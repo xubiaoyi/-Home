@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>BiaoYi Xu's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Yunhe Wang is currently a R & D Engineer at APe counseling company">
+  <meta name="keywords" content="BiaoYi Xu">
+  <meta name="author" content="BiaoYi Xu" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icons.png">
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>BiaoYi Xu</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#publications" class="w3-bar-item w3-button">Research</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">BiaoYi Xu</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/xubiaoyi.png">
+      <h1>BiaoYi Xu</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+         I am currently studying at Nanjing University of Aeronautics and Astronautics, and my research direction is  multi-object tracking baseed on computer vision </a>.
+        </p>
+        <p class="w3-center">
+          <a href="xubiaoyi@nuaa.edu.cn">Email</a>
+        </p>
+        </tbody></table>
+  </div>
+
+ 
+<!-- The Projects Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Recent Projects</h2>
+    <p class="w3-justify">
+    &nbsp &nbsp &nbsp &nbsp &nbsp State-of-the-art purely unsupervised learning person re-ID methods ﬁrst cluster all theimages into multiple clusters and assign each clustered image a pseudo label based on the cluster result. Then, they construct a memory dictionary that stores all the clustered images, and subsequently train the feature extraction network based on this dictionary. All these methods directly discard the unclustered outliers in the clustering process and train the network only based on the clustered images.
+The unclustered outliers are complicated images containing different clothes and poses, with low resolution, severe occlusion, and so on, which are common in real-world applications. Therefore,models trained only on clustered images will be less robust and unable to handle complicated images.We construct a memory dictionary that considers complicated images consisting of both clustered and unclustered images, and design a corresponding contrastive loss by considering both kinds of images.
+The experimental results show that our memory dictionary that considers complicated images and contrastive loss can improve the person re-ID performance, which demonstrates the effectiveness of considering unclustered complicated images in unsupervised person re-ID.
+</a>).
+    </p>
+
+        <h4><li>Architecture Diagram Of The Proposed Method</li></h4>
+        <img style="width:96%;" src="images/architecture.png"> 
+  </div>
+
+ <!-- The Publications Section -->
+  <div class="w3-container w3-padding-32"" id="publications">
+    <h2>Research</h2>
+      <p class="w3-left-align" style="line-height:200%">
+        I'm interested in devleoping <strong> multiple object tracking</strong> and <strong>person re-identification</strong> for computer vision.
+      </p>
+    <h4>Papers:</h4>
+
+    <ol>
+      <p>
+      <li><strong>An Effectively Finite-Tailed Updating for Multiple Object Tracking in Crowd Scenes</strong>
+      <br>
+      <strong>Biaoyi Xu</strong> , Dong Liang , Ling Li, Rong Quan, Mingguang Zhang
+      <br>
+      <em>Applied Sciences </em> 2022 | <a style="color: #447ec9" href="https://www.mdpi.com/2076-3417/12/3/1061">paper</a> 
+      </p>
+	  <p>
+      <li><strong>Discriminatively Unsupervised Learning Person Re-Identification via Considering Complicated Images</strong>
+      <br>
+      Rong Quan,<strong>Biaoyi Xu</strong> , Dong Liang  
+      <br>
+      <em>Sensors </em> 2023 | <a style="color: #447ec9" href="https://doi.org/10.3390/s23063259">paper</a> 
+      </p>
+      </ol>
+
+    </p>
+  </div>
+  
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
